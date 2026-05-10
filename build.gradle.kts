@@ -10,7 +10,7 @@ android {
     defaultConfig {
         minSdk = 21
         consumerProguardFiles("consumer-rules.pro")
-        buildConfigField("String", "VERSION_NAME", "\"1.0.0\"")
+        buildConfigField("String", "VERSION_NAME", "\"2.0.0\"")
     }
 
     buildFeatures {
@@ -30,4 +30,6 @@ android {
 dependencies {
     implementation("com.microsoft.signalr:signalr:7.+")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("com.google.code.gson:gson:2.10.1")
 }
